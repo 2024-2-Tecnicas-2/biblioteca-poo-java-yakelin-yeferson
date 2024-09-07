@@ -14,12 +14,14 @@ public class Principal {
     }
     
     public static void agregarPublicacion(){
-        
+        Revista rv = new Revista();
         int opc = Integer.parseInt(sc.nextLine());
         
         switch (opc) {
             case 1:
                 System.out.println("Ingrese el nombre de la revista: ");
+                
+                
                 
                 
                 break;
