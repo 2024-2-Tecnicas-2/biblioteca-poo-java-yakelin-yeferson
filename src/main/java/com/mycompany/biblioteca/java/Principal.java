@@ -29,18 +29,27 @@ public class Principal {
 
     public static void MostrarPublicaciones() {
         for (int i = 0; i < publicaciones.size(); i++) {
-            System.out.println(i + " "+ publicaciones.get(i).toString());
+            System.out.println(i + " : " + publicaciones.get(i).toString());
         }
 
     }
-    
-    public static void EditarPublicaciones(){
-        MostrarPublicaciones();
-        
-        System.out.println("Ingresa el que quieras editar");
-        
-  
-    
-    }
 
+    public static void EditarPublicaciones() {
+        MostrarPublicaciones();
+
+        System.out.println("Ingresa el que quieras editar");
+        // int index sirve para identificar cual de la lista quieres editar
+        int index = sc.nextInt();
+        sc.nextLine();
+
+        if (index < 0 || index >= publicaciones.size()) {
+            System.out.println("Indice invalido");
+        
+        return; // pa terminar la ejecucion
+    }
+    
+       Publicacion publicacion = (Publicacion) publicaciones.get(index);
+
+
+}
 }
