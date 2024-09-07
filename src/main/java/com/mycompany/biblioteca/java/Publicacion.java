@@ -9,6 +9,10 @@ public class Publicacion {
         this.anoPublicacion = anoPublicacion;
     }
 
+    public Publicacion() {
+    }
+    
+
     @Override
     public String toString() {
         return "Publicacion{" + "Titulo=" + Titulo + ", anoPublicacion=" + anoPublicacion + '}';
