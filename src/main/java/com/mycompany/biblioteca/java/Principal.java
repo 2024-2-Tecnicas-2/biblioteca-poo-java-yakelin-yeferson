@@ -9,15 +9,20 @@ public class Principal {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("");
-        
+        int opc;
+        while (true) {
+            System.out.println("1. Agregar publicacion: ");
+            System.out.println("Mostrar Publicaciones");
+            opc = Integer.parseInt(sc.nextLine());
+
+        }
 
     }
-    
-    public static void agregarPublicacion(int opc){
+
+    public static void agregarPublicacion() {
         Revista rv = new Revista();
-        
-        
+        int opc = Integer.parseInt(sc.nextLine());
+
         switch (opc) {
             case 1:
                 System.out.println("Ingrese el titulo de la revista: ");
@@ -33,17 +38,28 @@ public class Principal {
                 String nombRevista = sc.nextLine();
                 rv.setNombreRevista(nombRevista);
                 publicaciones.add(rv);
-                
-                
-                
-                
+
+                break;
+            case 2:
+                MostrarPublicaciones();
                 break;
             default:
                 throw new AssertionError();
         }
     }
-    
-    
-    
-    
+
+    public static void MostrarPublicaciones() {
+        for (int i = 0; i < publicaciones.size(); i++) {
+            System.out.println(i + " " + publicaciones.get(i).toString());
+        }
+
+    }
+
+    public static void EditarPublicaciones() {
+        MostrarPublicaciones();
+
+        System.out.println("Ingresa el que quieras editar");
+
+    }
+
 }
