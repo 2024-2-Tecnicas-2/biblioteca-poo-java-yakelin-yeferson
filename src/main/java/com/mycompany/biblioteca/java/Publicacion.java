@@ -11,6 +11,24 @@ public class Publicacion {
 
     public Publicacion() {
     }
+
+    public String getTitulo() {
+        return Titulo;
+    }
+
+    public void setTitulo(String Titulo) {
+        this.Titulo = Titulo;
+    }
+
+    public int getAnoPublicacion() {
+        return anoPublicacion;
+    }
+
+    public void setAnoPublicacion(int anoPublicacion) {
+        this.anoPublicacion = anoPublicacion;
+    }
+    
+    
     
 
     @Override
