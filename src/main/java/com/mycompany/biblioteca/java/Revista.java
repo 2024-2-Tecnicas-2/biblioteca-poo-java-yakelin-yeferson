@@ -4,6 +4,12 @@ public class Revista extends Publicacion {
     
     int NumeroRevistas;
     String NombreRevista;
+    
+    //constructor Vacio
+
+    public Revista() {
+    }
+    
 
     public Revista(int NumeroRevistas, String NombreRevista, String Titulo, int anoPublicacion) {
         super(Titulo, anoPublicacion);
