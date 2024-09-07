@@ -39,8 +39,7 @@ public class Revista extends Publicacion {
         this.anoPublicacion = anoPublicacion;
     }
     
-    
-    
+      
     //constructor Vacio
 
     public Revista() {
