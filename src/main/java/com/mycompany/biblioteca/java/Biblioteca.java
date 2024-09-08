@@ -3,7 +3,7 @@ package com.mycompany.biblioteca.java;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Principal {
+public class Biblioteca {
 
     static ArrayList<Publicacion> publicaciones = new ArrayList<>();
     static Scanner sc = new Scanner(System.in);
