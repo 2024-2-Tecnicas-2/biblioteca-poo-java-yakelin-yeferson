@@ -27,9 +27,7 @@ public class Publicacion {
     public void setAnoPublicacion(int anoPublicacion) {
         this.anoPublicacion = anoPublicacion;
     }
-    
-    
-    
+       
 
     @Override
     public String toString() {

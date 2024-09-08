@@ -4,6 +4,8 @@ public class Libro extends Publicacion {
     
     String Autor;
     int Numero_de_paginas;
+
+
     
     //Getter and setter
 

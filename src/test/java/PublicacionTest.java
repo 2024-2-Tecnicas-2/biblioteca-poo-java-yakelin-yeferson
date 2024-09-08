@@ -1,3 +1,4 @@
+import com.mycompany.biblioteca.java.Publicacion;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,4 +17,20 @@ public class PublicacionTest {
 //        int valorActual = miCuenta.multiplicar(3, 5);
 //        assertEquals(valorEsperado, valorActual);
 //    }
+    
+    @Test
+    public void testSetTitulo() {
+        Publicacion publicacion = new Publicacion();
+        publicacion.setTitulo("Jeferson Bobis");
+        assertEquals("Jeferson Bobis", publicacion.getTitulo());
+    }
+
+    @Test
+    public void testSetAnoPublicacion() {
+        Publicacion publicacion = new Publicacion();
+        publicacion.setAnoPublicacion(2023);
+        assertEquals(2023, publicacion.getAnoPublicacion());
+    }
+    
+    
 }
