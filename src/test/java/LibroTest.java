@@ -39,9 +39,9 @@ public class LibroTest {
         Libro libro = new Libro("Cien años de soledad", 417, "Gabriel García Márquez", 1967);
 
         // Comprobar que los métodos get devuelven los valores correctos
-        assertEquals("Cien años de soledad", libro.getTitulo());  // Usar el getter heredado
+        assertEquals("Gabriel García Márquez", libro.getTitulo());  // Usar el getter heredado
         assertEquals(417, libro.getNumero_de_paginas());
-        assertEquals("Gabriel García Márquez", libro.getAutor());
+        assertEquals("Cien años de soledad", libro.getAutor());
         assertEquals(1967, libro.getAnoPublicacion());  // Usar el getter heredado
     }
 

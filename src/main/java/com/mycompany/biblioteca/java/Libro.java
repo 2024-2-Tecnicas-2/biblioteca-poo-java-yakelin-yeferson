@@ -9,6 +9,9 @@ public class Libro extends Publicacion {
     
     //Getter and setter
 
+    public Libro() {
+    }
+
     public String getAutor() {
         return Autor;
     }
